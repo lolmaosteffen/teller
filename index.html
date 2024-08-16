@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="output">0</div>
+
+    <button onclick="plussOne()">+</button>
+    <button onclick="minuOne()">-</button>
+
+
+
+    <script>
+        var outPut = document.getElementById("output");
+        var numbOnScreen = 0;
+
+        function plussOne() {
+            numbOnScreen += 1;
+            outPut.innerHTML = numbOnScreen;
+        }
+        function minuOne() {
+            numbOnScreen -= 1;
+            outPut.innerHTML = numbOnScreen;
+        }
+
+    </script>
+</body>
+
+</html>
